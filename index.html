@@ -63,161 +63,177 @@
                         <br>field of battle and to command such unswervingly dutiful actors or troops.
                         </q>
                         <br>-Joseph Weizenbaum-<br>
-                        <br>Greetings, I am Oscar Gonzalez. I warmly welcome you to my portfolio website, where I will provide information on my background and professional experience. </br>
+                        <br>Greetings, I am Oscar Gonzalez. I warmly welcome you to my portfolio website, where I will provide information on my background and professional experience. <br>
                         <br> Thank you for stopping by and enjoy!
                     </center>
-                </stong>
+                </strong>
             </p>
-    </div>
-
-<!--Slideshow section-->
-  <div id="Slideshow">
-    <div id="Slideshow_Background">
-      <div id="Slideshow_Container">
-
-        <div class="mySlides fade">
-          <div class="Slides_Number">1 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/coding_screens.jpg" style="width:100%">
-             <div class="text">I am ready and available to support and contribute to your project.</div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="Slides_Number">2 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpg" style="width:100%">
-             <div class="text">As a full-stack software developer, I am proficient in the following technologies: HTML, CSS, JavaScript</div>
+        <!--Slideshow section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">1 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/coding_screens.jpg" style="width:100%">
+                        <div class="text">I am ready and available to support and contribute to your project.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">2 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpg" style="width:100%">
+                        <div class="text">As a full-stack software developer, I am proficient in the following technologies: HTML, CSS, JavaScript</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">3 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Python.jpg" style="width:100%">
+                        <div class="text">the widely-used programming language Python.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">4 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.jpg" style="width:100%">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">5 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%">
+                        <div class="text">Additionally, I have expertise in back-end development, databases, and SQL.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slides_Number">6 / 6</div>
+                        <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:rgb(8, 8, 8);">Contact me now!</a>
+                        </div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+                </div>
+            </div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="Slides_Number">3 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/Python.jpg" style="width:100%">
-             <div class="text">the widely-used programming language Python.</div>
+        <!--We included our JS function witin this file to ensure it was given precedence, this function covers the slideshow -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <!--About Section -->
+        <div class="Row" id="About">
+            <div class="Column_2">
+                <!--Left column-->
+                <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
+            </div>
+
+            <div class="column_1">
+                <h1>About</h1>
+                <!--Right column-->
+                <p>As a software developer with a passion for coding, I bring over 12 years of experience in custom cabinetry and woodworking to the table. Through my work, I have honed my creativity, problem-solving abilities, and technical skills. These
+                    skills have been put to the test daily, resulting in work being displayed in museums, high-end homes, well-known stores, trade shows and exhibits. My dedication, hard work, and drive have made me a highly respected and versatile woodworker.
+                    I am now eager to bring that same level of discipline and effort to the tech industry, allowing me to grow as a software developer and make a valuable contribution to any team. <br><br> For more info <a href="#Contact"> contact</a>                    me below!</p>
+            </div>
         </div>
 
-        <div class="mySlides fade">
-          <div class="Slides_Number">4 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/C_Sharp_and_Dot_NET.jpg" style="width:100%">
-             <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="Slides_Number">5 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%" >
-             <div class="text">Additionally, I have expertise in back-end development, databases, and SQL.</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="Slides_Number">6 / 6</div>
-           <img class="Slide_Show_Images" src="Stylesheet/Images/Coding_1.jpg" style="width:100%">
-             <div class="text">
-                <a onclick="openForm()" href="#Contact" style="color:rgb(8, 8, 8);">Contact me now!</a>
-             </div>
-        </div>
-
-          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-
-      </div>
-  <br>
-
-      <div style="text-align:center">
-
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-
-      </div>
-    </div>
-  </div>
-
-<!--We included our JS function witin this file to ensure it was given precedence, this function covers the slideshow -->
-  <script>
-    var slideIndex = 1;
-      showSlides(slideIndex);
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-          }
-          for (i = 0; i < dots.length; i++ ) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
-
-<!--About Section -->
-    <div class="Row" id="About">
-        <div class="Column_2"> <!--Left column-->
-            <img src="Stylesheet/Images/Development.jpg" alt="Laptop">
-        </div>
-
-        <div class="column_1">
-            <h1>About</h2><!--Right column-->
-            <p>As a software developer with a passion for coding, I bring over 12 years of experience in custom cabinetry and woodworking to the table. Through my work, I have honed my creativity, problem-solving abilities, and technical skills. These skills have been put to the test daily, resulting in work being displayed in museums, high-end homes, well-known stores, trade shows and exhibits. My dedication, hard work, and drive have made me a highly respected and versatile woodworker. I am now eager to bring that same level of discipline and effort to the tech industry, allowing me to grow as a software developer and make a valuable contribution to any team. <br><br> For more info <a href="#Contact"> contact</a> me below!</p>
-        </div>
-    </div>
-
-<!-- GitHub section -->
-    <div class="Row" id="Github">
-        <div class="Column_1">
-            <h1>GitHub</h1>
+        <!-- GitHub section -->
+        <div class="Row" id="Github">
+            <div class="Column_1">
+                <h1>GitHub</h1>
                 <p>You can view my coding project on my GitHub profile here:<br>
-                <center><a href="https://github.com/gon-osc" target="_blank">gon-osc GitHub</a></center></p>
+                    <center><a href="https://github.com/gon-osc" target="_blank">gon-osc GitHub</a></center>
+                </p>
                 <p>You can view some projects I have created using Django on my GitHub profile:
-                <center><a href="https://github.com/gon-osc/Django_Checkbook.git" target="_blank">Django Checkbook</a></center>
-                <center><a href="https://github.com/gon-osc/DjangoUniversity.git" target="_blank">Django University</a></center></p>
+                    <center><a href="https://github.com/gon-osc/Django_Checkbook.git" target="_blank">Django Checkbook</a></center>
+                    <center><a href="https://github.com/gon-osc/DjangoUniversity.git" target="_blank">Django University</a></center>
+                </p>
                 <p>If you would like to view or connect with me on LinkedIn or view my current Resume click the following links:
-                <center><a href="" target="_blank">Resume</a></center>
-                <center><a href="https://www.linkedin.com/in/gonzalezoscarsalvador/" target="_blank">LinkedIn</a></center></p>
-        </div>
+                    <center><a href="" target="_blank">Resume</a></center>
+                    <center><a href="https://www.linkedin.com/in/gonzalezoscarsalvador/" target="_blank">LinkedIn</a></center>
+                </p>
+            </div>
 
-        <div class="Column_2">
-            <a href="https://github.com/gon-osc" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+            <div class="Column_2">
+                <a href="https://github.com/gon-osc" target="_blank"><img src="Stylesheet/Images/GitHub.png" alt="GitHub"></a>
+            </div>
         </div>
     </div>
-</div>
 
 
-<!-- Contact section -->
-  <div id="Contact">
-    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-      <div class="form-popup" id="myForm">
-        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!--Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-        <h1>Contact</h2>
-            <label for="name"><b>Name</b></label>
-			        <input type="text" placeholder="Type your name here" name="name" required>
-			      <label for="phone"><b>Phone</b></label>
-			        <input type="text" placeholder="Enter your phone number here" name="phone">
-			      <label for="email"><b>Email</b></label>		
-			        <input type="text" placeholder="Type your email address here" name="email" required>
-			      <label for="message"><b>Message</b></label>
-			        <input type="text" placeholder="Type your message here" name="message">
-    <button type="submit" class="btn">SUBMIT</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-        </form>
-      </div>
-  </div>
+    <!-- Contact section -->
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+        <div class="form-popup" id="myForm">
+            <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                <!--Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Type your name here" name="name" required>
+                <label for="phone"><b>Phone</b></label>
+                <input type="text" placeholder="Enter your phone number here" name="phone">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Type your email address here" name="email" required>
+                <label for="message"><b>Message</b></label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
 
-<!-- Footer section -->
+    <!-- Footer section -->
     <footer>
         <p>
             <center>Oscar S. Gonzalez</center>
-        </P>
+        </p>
     </footer>
 
 </body>
+
 </html>

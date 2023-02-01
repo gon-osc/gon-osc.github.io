@@ -16,7 +16,7 @@ body {
     transition: 3s opacity;
     /*This causes a 3 second fade in, you can change this time if you choose */
     letter-spacing: .2vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 1.5vw;
 }
 
