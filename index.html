@@ -2,54 +2,59 @@
 <html>
 
 <!-- Head -->
-    <head>
-        <meta charset="UTF-8">
-        <title> Oscar Gonzalez </title>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="Stylesheet/portfolio_webpage.css">
-        <script src="JS/My_Portfolio.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> <!-- We use a little bit of jQuery on this site now -->
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Oscar Gonzalez </title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Stylesheet/portfolio_webpage.css">
+    <script src="JS/My_Portfolio.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- We use a little bit of jQuery on this site now -->
+</head>
 
 <!-- Body -->
+
 <body class="Background">
-<!--Fade in effect -->
-<script> <!-- This script and function controls our fade in effect -->
-    document.body.className += ' fade-out';
+    <!--Fade in effect -->
+    <script>
+        <!-- This script and function controls our fade in effect -->
+        document.body.className += ' fade-out';
         $(function() {
-          $('body').removeClass('fade-out');
-        }
-    );
+            $('body').removeClass('fade-out');
+        });
+    </script>
 
-</script>
-
-<!-- Navbar -->
+    <!-- Navbar -->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
-        <a href="#Slideshow">Slideshow</a><!--This is a new section -->
+        <a href="#Slideshow">Slideshow</a>
+        <!--This is a new section -->
         <a href="#About">About</a>
         <a href="#Github">GitHub</a>
-        <a onclick="openForm()">Contact</a> <!--This makes it so that our openForm function runs when we click Contact on the nav bar -->
+        <a onclick="openForm()">Contact</a>
+        <!--This makes it so that our openForm function runs when we click Contact on the nav bar -->
     </div>
 
-<!--This allows us to close the form when we click outside the nav bar or contact form-->
-<div class="btn cancel" onclick="closeForm()">
+    <!--This allows us to close the form when we click outside the nav bar or contact form-->
+    <div class="btn cancel" onclick="closeForm()">
 
-<!-- Home -->
-    <div id="Home">
-        <br><!--Breaks inserted to add space between navbar and first heading -->
-        <br>
+        <!-- Home -->
+        <div id="Home">
+            <br>
+            <!--Breaks inserted to add space between navbar and first heading -->
+            <br>
 
-<!-- Video -->
-        <video autoplay muted lood id="Typing_Video"><!--Makes the video play automatically, on a loop and with no sound-->
+            <!-- Video -->
+            <video autoplay muted lood id="Typing_Video"><!--Makes the video play automatically, on a loop and with no sound-->
             <source src="Stylesheet/Video/coding.mp4" type="video/mp4">
             Your browser does not support HTML5 video. <!--Display message if video fails to run-->
         </video>
-    </div>
+        </div>
 
-<!-- Video text -->
-    <div class="Video_Text">
-        <h1 style="color:black;">Designer & Developer</h1>
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 style="color:black;">Designer & Developer</h1>
             <p>
                 <strong>
                     <center>
@@ -58,9 +63,7 @@
                         <br>field of battle and to command such unswervingly dutiful actors or troops.
                         </q>
                         <br>-Joseph Weizenbaum-<br>
-                        <br>
-                        My name is Oscar Gonzalez. Welcome to my portfolio website. 
-                        On it, I will tell you about my background and experience.</br>
+                        <br>Greetings, I am Oscar Gonzalez. I warmly welcome you to my portfolio website, where I will provide information on my background and professional experience. </br>
                         <br> Thank you for stopping by and enjoy!
                     </center>
                 </stong>
@@ -75,19 +78,19 @@
         <div class="mySlides fade">
           <div class="Slides_Number">1 / 6</div>
            <img class="Slide_Show_Images" src="Stylesheet/Images/coding_screens.jpg" style="width:100%">
-             <div class="text">I'm available to assist you on your project!</div>
+             <div class="text">I am ready and available to support and contribute to your project.</div>
         </div>
 
         <div class="mySlides fade">
           <div class="Slides_Number">2 / 6</div>
            <img class="Slide_Show_Images" src="Stylesheet/Images/HTML_CSS_and_JavaScript.jpg" style="width:100%">
-             <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+             <div class="text">As a full-stack software developer, I am proficient in the following technologies: HTML, CSS, JavaScript</div>
         </div>
 
         <div class="mySlides fade">
           <div class="Slides_Number">3 / 6</div>
            <img class="Slide_Show_Images" src="Stylesheet/Images/Python.jpg" style="width:100%">
-             <div class="text">the popular programming language Python,</div>
+             <div class="text">the widely-used programming language Python.</div>
         </div>
 
         <div class="mySlides fade">
@@ -99,7 +102,7 @@
         <div class="mySlides fade">
           <div class="Slides_Number">5 / 6</div>
            <img class="Slide_Show_Images" src="Stylesheet/Images/SQL_and_Database.jpg" style="width:100%" >
-             <div class="text">back end development, databases and SQL.</div>
+             <div class="text">Additionally, I have expertise in back-end development, databases, and SQL.</div>
         </div>
 
         <div class="mySlides fade">
@@ -164,7 +167,7 @@
 
         <div class="column_1">
             <h1>About</h2><!--Right column-->
-            <p>I am a software developer who loves to code! I currently have 12 years of custom cabinetry/woodworking experience in which my creativity, ingenuity, problem-solving and technical skills were put to test daily. Having sharpened these skills along with others that I picked over the years is the reason my work has made it to museums, million dollars homes, well known stores, and various trade shows and exhibits. The discipline, effort and drive that I put in to become a top, respected and versatile woodworker is what I will bring into the tech industry to help me grow more as a software developer in order to prove myself to be a vital part of the team. <br><br> For more info <a href="#Contact"> contact</a> me below!</p>
+            <p>As a software developer with a passion for coding, I bring over 12 years of experience in custom cabinetry and woodworking to the table. Through my work, I have honed my creativity, problem-solving abilities, and technical skills. These skills have been put to the test daily, resulting in work being displayed in museums, high-end homes, well-known stores, trade shows and exhibits. My dedication, hard work, and drive have made me a highly respected and versatile woodworker. I am now eager to bring that same level of discipline and effort to the tech industry, allowing me to grow as a software developer and make a valuable contribution to any team. <br><br> For more info <a href="#Contact"> contact</a> me below!</p>
         </div>
     </div>
 
@@ -178,7 +181,7 @@
                 <center><a href="https://github.com/gon-osc/Django_Checkbook.git" target="_blank">Django Checkbook</a></center>
                 <center><a href="https://github.com/gon-osc/DjangoUniversity.git" target="_blank">Django University</a></center></p>
                 <p>If you would like to view or connect with me on LinkedIn or view my current Resume click the following links:
-                <center><a href="https://drive.google.com/file/d/1eEm7tEENtGLODYS4ClLwmJaELx5HN4qh/view?usp=sharing" target="_blank">Resume</a></center>
+                <center><a href="" target="_blank">Resume</a></center>
                 <center><a href="https://www.linkedin.com/in/gonzalezoscarsalvador/" target="_blank">LinkedIn</a></center></p>
         </div>
 
